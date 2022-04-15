@@ -1,0 +1,94 @@
+body {
+	/* Set font-size to default (16px) */
+	font-size: $font-size-normal;
+	font-family: $font-family;
+	font-weight: $font-weight-normal;
+	line-height: $font-height;
+}
+
+.heading-primary {
+	font-size: 6rem;
+	font-weight: $font-weight-bolder;
+	letter-spacing: .3rem;
+	text-transform: uppercase;
+	color: $color-white;
+	text-shadow: .5px .5px 6.25rem $color-black;
+
+	@media only screen and (max-width: 60rem) {
+		font-size: 5rem;
+	}
+
+	@media only screen and (max-width: 37.5rem) {
+		font-size: 4.5rem;
+	}
+}
+
+.heading-secondary {
+	font-size: 3.25rem;
+	font-weight: $font-weight-normal;
+	letter-spacing: .1rem;
+	line-height: 1.25;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	background-image: linear-gradient(to bottom right, $color-primary-dark, $color-primary 50%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+
+	&::first-letter {
+		font-size: 120%;
+	}
+}
+
+.heading-tertiary {
+	font-size: 2.75rem;
+	letter-spacing: .1rem;
+	margin-bottom: 1rem;
+	background-image: linear-gradient(to bottom right, $color-primary-dark, $color-primary 50%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.heading-quaternary {
+	font-size: 2rem;
+	letter-spacing: .05rem;
+	background-image: linear-gradient(to bottom right, $color-primary-dark, $color-primary 50%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	// text-transform: capitalize;
+
+	a {
+		font-weight: $font-weight-normal;
+		text-decoration: none;
+		color: $color-black;
+		transition: all .3s;
+
+		&:hover {
+			color: $color-primary;
+			text-shadow: .25px .25px $color-primary;
+		}
+	}
+}
+
+// .heading-quinary {}
+
+// .heading-senary {}
+
+.paragraph {
+	letter-spacing: 1.25;
+	color: $color-grey-dark-3;
+	margin-top: 1.5rem;
+}
+
+.text-link {
+	text-decoration: none;
+	font-weight: $font-weight-bold;
+	color: $color-primary-light;
+	transition: all .2s;
+
+	&:hover {
+		color: $color-primary;
+	}
+}

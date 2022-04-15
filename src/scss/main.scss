@@ -1,0 +1,25 @@
+@import "utilities/variables";
+@import "utilities/utility-classes";
+@import "utilities/mixins";
+@import "utilities/functions";
+@import "utilities/animations";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/info-card";
+@import "components/article";
+@import "components/process-box";
+
+@import "layout/footer";
+@import "layout/form";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/about";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/services-web-design";
+@import "pages/services-seo";
+@import "pages/work-web-design";

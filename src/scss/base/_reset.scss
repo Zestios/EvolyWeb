@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* Font-size at 62.5% means 1rem = 10px (10px/16px = 62.5%) */
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+
+	@media only screen and (max-width: 50em) {
+		font-size: 57.5%;
+	}
+
+	@media only screen and (max-width: 35em) {
+		font-size: 50%;
+	}
+}
+
+body {
+	box-sizing: border-box;
+}

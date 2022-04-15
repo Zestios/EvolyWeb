@@ -1,0 +1,44 @@
+// FONT
+.font-light {
+	font-weight: $font-weight-light;
+}
+
+.font-normal {
+	font-weight: $font-weight-normal;
+}
+
+.font-bold {
+	font-weight: $font-weight-bold;
+	color: $color-black;
+}
+
+.font-bolder {
+	font-weight: $font-weight-bolder;
+	color: $color-black;
+}
+
+
+// TEXT
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+
+// DISPLAY
+.hidden {
+	display: none;
+}

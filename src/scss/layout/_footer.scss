@@ -1,0 +1,56 @@
+.footer {
+	padding: 7.5rem 20rem;
+	height: 40rem;
+	width: 100%;
+	background-color: rgba($color-black, .95);
+	color: $color-white;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+
+	@media only screen and (max-width: 70rem) {
+		padding: 5rem 5rem;
+	}
+
+	@media only screen and (max-width: 67.5rem) {
+		display: none;
+	}
+
+	&__logo {
+		align-self: center;
+		grid-row: 1 / -1;
+
+		.logo {
+			border-radius: 0;
+		}
+	}
+
+	&__nav {
+		.heading-quaternary {
+			text-transform: uppercase;
+			margin-bottom: 2rem;
+			color: $color-white;
+		}
+
+		li {
+			list-style-type: none;
+		}
+
+		a {
+			text-decoration: none;
+			color: $color-white;
+			font-size: $font-size-small;
+			font-weight: $font-weight-light;
+
+			&:hover {
+				color: $color-primary-light;
+			}
+		}
+	}
+
+	&__copyright {
+		grid-column: 1 / -1;
+		text-align: center;
+		align-self: end;
+	}
+}

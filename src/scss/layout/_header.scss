@@ -1,0 +1,128 @@
+// Landing section
+.header {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 2fr 1fr 1fr;
+	background-size: cover;
+	text-align: center;
+
+	@media only screen and (max-width: 40rem) {
+		grid-template-rows: 3fr 2fr;
+		gap: 10rem;
+	}
+
+	&--home {
+		background-image: linear-gradient(rgba($color-grey-dark-3, 0.5),
+				rgba($color-grey-dark-3, 0.5)), url("https://zestios.github.io/EvolyWeb/src/img/home-hero.jpg");
+
+		background-image: -webkit-linear-gradient(rgba($color-grey-dark-3, 0.5),
+				rgba($color-grey-dark-3, 0.5)), url("https://zestios.github.io/EvolyWeb/src/img/home-hero.jpg");
+	}
+
+	&--about {
+		background-image: linear-gradient(rgba($color-grey-dark-3, 0.5),
+				rgba($color-grey-dark-3, 0.5)), url("https://zestios.github.io/EvolyWeb/src/img/about-us-hero.jpg");
+
+		background-image: -webkit-linear-gradient(rgba($color-grey-dark-3, 0.5),
+				rgba($color-grey-dark-3, 0.5)), url("https://zestios.github.io/EvolyWeb/src/img/about-us-hero.jpg");
+	}
+
+	&--services-web-design {
+		background-image: linear-gradient(rgba($color-grey-dark-3, 0.5),
+				rgba($color-grey-dark-3, 0.5)), url("https://zestios.github.io/EvolyWeb/src/img/web-design-hero.jpg");
+
+		background-image: -webkit-linear-gradient(rgba($color-grey-dark-3, 0.5),
+				rgba($color-grey-dark-3, 0.5)), url("https://zestios.github.io/EvolyWeb/src/img/web-design-hero.jpg");
+	}
+
+	&--services-seo {
+		background-image: linear-gradient(rgba($color-grey-dark-3, 0.4),
+				rgba($color-grey-dark-3, 0.4)), url("https://zestios.github.io/EvolyWeb/src/img/seo-hero.jpg");
+
+		background-image: -webkit-linear-gradient(rgba($color-grey-dark-3, 0.4),
+				rgba($color-grey-dark-3, 0.4)), url("https://zestios.github.io/EvolyWeb/src/img/seo-hero.jpg");
+	}
+
+	&--work-web-design {
+		background-image: linear-gradient(rgba($color-grey-dark-3, 0.4),
+				rgba($color-grey-dark-3, 0.7)), url("https://zestios.github.io/EvolyWeb/src/img/work-web-design-hero.jpg");
+
+		background-image: -webkit-linear-gradient(rgba($color-grey-dark-3, 0.4),
+				rgba($color-grey-dark-3, 0.7)), url("https://zestios.github.io/EvolyWeb/src/img/work-web-design-hero.jpg");
+	}
+
+	&--contact-us {
+		background-image: linear-gradient(rgba($color-grey-dark-3, 0.4),
+				rgba($color-grey-dark-3, 0.7)), url("https://zestios.github.io/EvolyWeb/src/img/contact-us-hero.jpg");
+
+		background-image: -webkit-linear-gradient(rgba($color-grey-dark-3, 0.4),
+				rgba($color-grey-dark-3, 0.7)), url("https://zestios.github.io/EvolyWeb/src/img/contact-us-hero.jpg");
+	}
+
+	&--404-page {
+		background-image: linear-gradient(rgba($color-grey-dark-3, 0.5),
+				rgba($color-grey-dark-3, 0.5)), url("https://zestios.github.io/EvolyWeb/src/img/404-page.jpg");
+
+		background-image: -webkit-linear-gradient(rgba($color-grey-dark-3, 0.5),
+				rgba($color-grey-dark-3, 0.5)), url("https://zestios.github.io/EvolyWeb/src/img/404-page.jpg");
+	}
+
+	&__title-box {
+		justify-self: center;
+		align-self: end;
+		width: 60%;
+		line-height: 1.1;
+		animation: fadeIn ease-in .75s;
+
+		&--services-seo {
+			width: 50%;
+		}
+
+		&__city {
+			display: block;
+			font-size: 70%;
+			font-weight: $font-weight-normal;
+		}
+
+		&__topic {
+			color: $color-primary;
+		}
+	}
+
+	&__slogan-box {
+		align-self: center;
+		color: $color-white;
+		font-size: 3rem;
+		font-weight: $font-weight-light;
+		letter-spacing: 3px;
+		line-height: 3;
+		background-color: rgba($color-grey-dark-3, .4);
+		animation: moveInLeft 1s ease-out .75s;
+		animation-fill-mode: backwards;
+
+		@media only screen and (max-width: 60rem) {
+			font-size: 2rem;
+		}
+
+		@media only screen and (max-width: 40rem) {
+			display: none;
+		}
+
+		&--404 {
+			background-color: transparent;
+		}
+	}
+
+	&__btn-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 2.5rem;
+		font-weight: $font-weight-bold;
+
+		@media only screen and (max-width: 40rem) {
+			flex-direction: column;
+			justify-content: start;
+		}
+	}
+}

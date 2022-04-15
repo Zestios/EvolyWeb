@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap"
+			rel="stylesheet">
+
+		<link rel="stylesheet" href="dist/css/main.css">
+
+		<title>EvolyWeb | Your source for beautiful websites</title>
+	</head>
+
+	<body>
+
+		<!-- NAVIGATION -->
+		<nav>
+			<!-- Logo -->
+			<a href="index.html"> <img class="logo" src="src/img/EvolyWeb-logo.png"
+					alt="EvolyWeb-business-logo"></a>
+
+			<!-- Nav links -->
+			<div class="nav-bar">
+				<button>
+					<a href="index.html">Home</a>
+				</button>
+				<button><a href="about.html">About</a></button>
+
+				<!-- Dropdown menus -->
+				<div class="nav-bar__dropdown nav-bar__dropdown--services">
+					<button>Services<ion-icon class="dropdown-icon" name="chevron-down-outline">
+						</ion-icon></button>
+					<ul>
+						<li><a href="services-web-design.html">Web design and development</a></li>
+						<li><a href="services-seo.html">Website SEO</a></li>
+					</ul>
+				</div>
+				<div class="nav-bar__dropdown nav-bar__dropdown--work">
+					<button>Work<ion-icon class="dropdown-icon" name="chevron-down-outline">
+						</ion-icon></button>
+					<ul>
+						<li><a href="work-web-design.html">Web design</a></li>
+					</ul>
+				</div>
+
+				<button><a class="current-page" href="contact.html">Contact</a></button>
+			</div>
+
+			<!-- CTA -->
+			<button class="cta"><a class="btn btn--green" href="contact.html">Free price quote</a></button>
+		</nav>
+
+
+		<!-- HEADER (TITLE SECTION) -->
+		<div class="header header--contact-us">
+			<div class="header__title-box">
+				<h1 class="heading-primary">
+					Contact us at <span class="header__title-box__topic">EvolyWeb</span>
+				</h1>
+			</div>
+		</div>
+
+
+		<!-- SECTION INTRO -->
+		<div class="section-intro section-intro--contact">
+			<div class="section-intro__text">
+				<p class="paragraph">Fill the form below with details regarding your inquiry and a member of our team will email you shortly. Please allow for a maximum of 24h to hear back from us.
+				</p>
+				<p class="paragraph">We are looking forward to working with you!
+				</p>
+			</div>
+		</div>
+
+		<!-- SECTION CONTACT -->
+
+		<div class="section-contact" id="section-contact">
+			<img class="section-contact__image" src="src/img/contact-form.jpg" alt="">
+
+			<div class="section-contact__form">
+				<h2 class="heading-secondary">Contact Us</h2>
+				<form action="#" class="form">
+					<input type="text" class="form__input" placeholder="Name" id="name" required>
+					<input type="email" class="form__input" placeholder="Email address" id="email" required>
+					<input type="text" class="form__input" placeholder="Project details" id="details" required>
+					<button class="cta"><a class="btn btn--green" href="#">Send Request</a></button>
+				</form>
+			</div>
+
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<!-- Logo -->
+			<div class="footer__logo">
+				<a href="index.html"> <img class="logo" src="src/img/EvolyWeb-logo.png"
+						alt="EvolyWeb-business-logo"></a>
+			</div>
+
+			<!-- Nav -->
+			<div class="footer__nav">
+				<h4 class="heading-quaternary">General</h4>
+				<ul>
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__nav">
+				<h4 class="heading-quaternary">Services</h4>
+				<ul>
+					<li><a href="services-web-design.html">Web design and development</a></li>
+					<li><a href="services-seo.html">Website SEO</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__nav">
+				<h4 class="heading-quaternary">Portfolio</h4>
+				<ul>
+					<li><a href="work-web-design.html">Web design and development</a></li>
+				</ul>
+			</div>
+
+			<!-- Copyright -->
+			<div class="footer__copyright">
+				<small>
+					&copy; 2020<script>
+						new Date().getFullYear() > 2020 && document.write("-" + new Date().getFullYear());
+					</script> EvolyWeb. All Rights Reserved.
+				</small>
+			</div>
+
+		</footer>
+
+		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+	</body>
+
+</html>
